@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio</title>
+</head>
+
+<body>
+    <h2>convertidor de moneda</h2>
+    <input type="number" id="valor" value="1" step="any">
+    <select id="desde">
+        <option>USD</option>
+        <option>EUR</option>
+        <option>CLP</option>
+    </select>
+    <select id="a">
+        <option>USD</option>
+        <option>EUR</option>
+        <option>CLP</option>
+    </select>
+    <button id="btn">convertir</button>
+    <p id="res"></p>
+    <script>
+        btn.onclick = async () => {
+            const v = +valor.value, d = desde.value.toLowerCase(), h = a.value.toLowerCase();
+            if (d === h) return res.textcontent = `${v} ${d.toUpperCase()} = ${v} ${h.toUpperCase()}`;
+            const r = await fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${d}.json`).then(r => r.json());
+            const tasa = r[d][h];
+            res.textContent = `${v} ${d.toUpperCase()}=${(v * tasa).toFixed(2)} ${h.toUpperCase()}`;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media (min-width:1024px) {
+    nav ul {
+        flex-direction: row;
+    }
+
+    footer {
+        display: block;
+    }
+}
+
+@media (min-width:0px) and (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+:root {
+    --bg: green;
+    --card: black;
+    --muted: yellow;
+    --accent: black;
+    --glass: rgba(255, 255, 255, 0.04);
+    --radius: 12px;
+    --gap: 18px;
+    --maxw: 1200px;
+    font-family: "New Rocker", system-ui;
+}
+
+* {
+    box-sizing: border-box
+}
+
+header {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(180deg, black 0%, green 60%);
+    color: white;
+    font-family: "New Rocker", system-ui;
+}
+
+.container {
+    max-width: auto;
+    margin: 24px auto;
+    padding: 1rem;
+    background-color: green;
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(20px, 3vw, 30px);
+    color: var(--accent);
+}
+
+.subtitle {
+    color: var(--muted);
+    margin: 6px 0 12px;
+}
+
+.control {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax (26px, 1fr));
+    gap: var(--gap);
+    align-items: start;
+    margin-top: 18px;
+}
+
+.card {
+    background: linear-gradient(180deg, green, black);
+    border-radius: var(--radius);
+    overflow-y: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    box-shadow: 0 6px 20px rgba(2, 6, 12, 0.7);
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 36px rgba(3, 10, 18, 0.6);
+}
+
+
+.card img {
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-body h2 {
+    margin: 0 0 6px;
+    color: var(--accent);
+}
+
+.meta {
+    color: #cfe7ff;
+    font-size: 13px;
+    margin: 6px 0;
+}
+
+.leyenda {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.card-name {
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    align-items: flex-start;
+    justify-content: left;
+    text-decoration: none;
+    font-weight: bold;
+}
+.carousel{
+    width: 360px;
+    height: 360px;
+}
+
+

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bestiario</title>
+  <link rel="stylesheet" href="css/bestiario.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>bestiario de mitologia chilena y latinoamericana</h1>
+      <p class="subtitle">exploremos las criaturas que habitan las leyendas de chile y latinoamerica</p>
+      <div class="control">
+         <input id="search" type="search" placeholder="Buscar por nombre..." />
+
+         
+      </div>
+    </header>
+    <div class="container"></div>
+    <main class="grid" id="bestiario"></main>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card criatura">
+          <img src="images/trauco-acechando-mujer-bosque.jpg" alt="trauco">
+          <div class="card-body">
+            <h5 class="card-name">trauco</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>especie:</strong>duende chilote</p>
+            <p class="meta"><strong>peligrosidad:</strong>4/5</p>
+            <p class="meta"><strong>habitat:</strong>bosques de chiloe</p>
+            <p class="meta"><strong>poderes:</strong>seduccion irresistible, manipulacion emocional, sigilo absoluto</p>
+            <p class="leyenda">el trauco es un ser pequeño y de aspecto grotesco que habita los bosques del archipielago
+              de chiloe. segun la tradicion, posee un magnetismo irresistible sobre las mujeres; su mirada y precensia
+              provocan atraccion y, a veces, embarazo inexplicable.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/caleu.jpg" alt="caleuche">
+          <div class="card-body">
+            <h5 class="card-name">caleuche</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>especie:</strong>barco encantado</p>
+            <p class="meta"><strong>peligrosidad:</strong>5/5</p>
+            <p class="meta"><strong>habitat:</strong>canales y fiordos de chiloe</p>
+            <p class="meta"><strong>poderes:</strong>navegacion nocturna invisible, recoleccion de almas, transformacion
+            </p>
+            <p class="leyenda">el caleuche es el mitico barco fantasma de chiloe que aparece envuelto en luces y musica
+              durante la noche. dicen que recoge los naufragos y a los muertos, transformandolos en parte de su
+              tripulacion eterna;tambien se le asocia con brujos y hechiceros. ver su estela es presagio: muchos
+              relatos describen pactos, riquezas y la desaparicion de quienes aborden su cubierta. sus cantos atraen y
+              hechizan a marineros incautos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/images.jpg" alt="Alicanto">
+          <div class="card-body">
+            <h5 class="card-name">Alicanto</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Ave de metal</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Desierto de Atacama y quebradas mineras</p>
+            <p class="meta"><strong>Poderes:</strong> Plumas que reflejan metales preciosos, guía perdidos</p>
+            <p class="leyenda">El Alicanto es un ave fantástica que, según el imaginario minero, brilla con destellos
+              dorados o plateados que reflejan la presencia de vetas de mineral. Los mineros que la siguen por codicia
+              suelen perderse y perecer en el desierto; sólo los de corazón puro pueden verla sin peligro. En algunos
+              cuentos su carne es tóxica y su aparición se asocia a advertencias de la tierra.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/piuchen_artaria_metal_fest_by_dhemoas_deuu1ny-fullview.jpg" alt="Peuchen">
+          <div class="card-body">
+            <h5 class="card-name">Peuchen</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Ser volador metamórfico</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 5/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Bosques, pantanos y riberas del sur de Chile</p>
+            <p class="meta"><strong>Poderes:</strong> Transformación, succión de sangre, hipnosis por silbido</p>
+            <p class="leyenda">El Peuchen —también conocido como Piguchen— es una criatura temida por su capacidad de
+              volar
+              silenciosamente y succionar la sangre de animales y personas. Se le describe a veces como una serpiente
+              alada
+              o una sombra que emite un agudo silbido capaz de hipnotizar. Los brujos saben cómo detectarlo y realizar
+              rituales para expulsarlo; las familias rurales colocan amuletos para proteger a sus animales.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/chonchón-2.jpg" alt="chonchon">
+          <div class="card-body">
+            <h5 class="card-name">chonchon</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Cabeza voladora hechizada</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Noches rurales, techos y árboles</p>
+            <p class="meta"><strong>Poderes:</strong> Vuelo silencioso, sonido hipnótico, augurio de males</p>
+            <p class="leyenda">El Chonchón surge cuando un hechicero o hechicera realiza un pacto oscuro y se desprende
+              la
+              cabeza, que adquiere alas y vuela. Su silbido anuncia contagios, muertes o desgracias; los campesinos lo
+              reconocen y evitan salir de noche si lo escuchan. Es una manifestación del lado oscuro de la magia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/camahueto___mitologia_chilena_by_maurilustrador_dfr1tqs-pre.jpg" alt="camahueto">
+          <div class="card-body">
+            <h5 class="card-name">camahueto</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Toro mítico acuático</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Ríos, estuarios y fiordos del sur</p>
+            <p class="meta"><strong>Poderes:</strong> Provoca crecidas e inundaciones, cuerno con propiedades curativas
+            </p>
+            <p class="leyenda">El Camahueto es descrito como un toro nacido en el mar que, al llegar a la orilla,
+              recorre la tierra con fuerza devastadora. Su cuerno tiene virtudes medicinales y se cree que al arrancarlo
+              nace un nuevo Camahueto. Los brujos lo buscan por su cuerno, pero su captura supone grandes riesgos: su
+              furia provoca inundaciones y destrucción.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/imbunche___mitologia_chilena_by_maurilustrador_dfr1try-pre.jpg" alt="imbunche">
+          <div class="card-body">
+            <h5 class="card-name">imbunche</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Humano transformado por brujería</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Cuevas y cavernas donde habitan los brujos</p>
+            <p class="meta"><strong>Poderes:</strong> Fuerza descomunal, guardián silencioso, apariencia aterradora</p>
+            <p class="leyenda">El Imbunche es un ser humano aniquilado en su identidad: secuestrado de niño y deformado
+              mediante rituales hasta convertirse en guardián mudo de las cuevas de los brujos. Su cuerpo está torcido,
+              y su boca a veces tejida; su presencia es un castigo y una maldición. Se dice que quienes conocen su
+              historia no pueden olvidar el horror que representa.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/images.jpeg" alt="pillan">
+          <div class="card-body">
+            <h5 class="card-name">pillan</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Espíritu volcánico (Mapuche)</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Volcanes, cumbres y grandes cerros</p>
+            <p class="meta"><strong>Poderes:</strong> Genera erupciones, terremotos y vientos; imparte castigos o
+              protección</p>
+            <p class="leyenda">En la cosmovisión mapuche, el Pillán es una deidad o espíritu poderoso ligado a fuerzas
+              telúricas: controla el fuego, los volcanes y los fenómenos atmosféricos. Puede otorgar poder a líderes y
+              machis, pero también castigar a quienes rompen el equilibrio. Su culto tradicional es profundo y exige
+              respeto por la naturaleza.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/la-fiura-horror-y-maldad-femenina-chilencc83a.jpg" alt="la fiura">
+          <div class="card-body">
+            <h5 class="card-name">la fiura</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Espíritu femenino del bosque</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Bosques húmedos y zonas silvestres</p>
+            <p class="meta"><strong>Poderes:</strong> Transformación, emite olores repulsivos, confusión</p>
+            <p class="leyenda">La Fiura es una aparición femenina que cambia de forma para confundir a viajeros y
+              castigar
+              a los arrogantes. Su aspecto puede ser bello o monstruoso; su función es recordar el respeto por los
+              espacios naturales. Quienes la encuentran pueden perder el rumbo o sufrir enfermedades leves hasta
+              aprender
+              la lección.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/ngen.jpeg" alt="ngen">
+          <div class="card-body">
+            <h5 class="card-name">ngen</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Guardianes espirituales mapuches</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Montes, riberas, piedras y lugares sagrados</p>
+            <p class="meta"><strong>Poderes:</strong> Protegen recursos naturales, imponen castigos ambientales</p>
+            <p class="leyenda">Los Ngen son espíritus que presiden cada elemento de la naturaleza: el agua, la tierra,
+              los
+              montes. No son inherentemente malévolos, pero exigen respeto; quienes abusan de los recursos pueden
+              recibir
+              enfermedades, sequías o mala suerte. Su presencia forma parte central de la ética mapuche sobre el manejo
+              del entorno.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/la llorona.jpg" alt="la llorona">
+          <div class="card-body">
+            <h5 class="card-name">la llorona</h5>
+            <p class="meta"><strong>pais:</strong>latinoamerica</p>
+            <p class="meta"><strong>Especie:</strong> Aparición humana errante</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Riberas de ríos, lagunas y zonas rurales</p>
+            <p class="meta"><strong>Poderes:</strong> Llanto que atrae, confusión nocturna</p>
+            <p class="leyenda">La Llorona es una mujer que, tras perder o perderse a sus hijos, quedó condenada a vagar
+              lamentando su destino. Sus lamentos atraen a los desprevenidos y son usados en relatos para advertir a
+              niños
+              y jóvenes de los peligros nocturnos. En Chile y Latinoamérica existen múltiples variantes de su historia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/el-nahuelito.jpg" alt="nahuelito">
+          <div class="card-body">
+            <h5 class="card-name">nahuelito</h5>
+            <p class="meta"><strong>pais:</strong>argentina</p>
+            <p class="meta"><strong>Especie:</strong> Monstruo lacustre</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Lagos patagónicos (Nahuel Huapi, etc.)</p>
+            <p class="meta"><strong>Poderes:</strong> Gran tamaño, sigilo acuático, embestida poderosa</p>
+            <p class="leyenda">Nahuelito es el nombre que se da a un supuesto reptil o criatura de gran tamaño que
+              habitaría los lagos de la Patagonia. Los avistamientos y fotografías han alimentado la leyenda; para
+              algunos
+              es un superviviente de eras antiguas, para otros un mito que explica lo inexplicable en cuerpos de agua
+              profundos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/el cadejo.jpeg" alt="el cadejo">
+          <div class="card-body">
+            <h5 class="card-name">el cadejo</h5>
+            <p class="meta"><strong>pais:</strong>guatemala</p>
+            <p class="meta"><strong>Especie:</strong> Perro fantasma protector o maléfico</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Caminos rurales y pueblos nocturnos</p>
+            <p class="meta"><strong>Poderes:</strong> Acompaña o persigue, influye en la suerte del viajero</p>
+            <p class="leyenda">El Cadejo es un perro sobrenatural de la tradición centroamericana que también aparece en
+              relatos sudamericanos: puede ser protector (blanco) o maléfico (negro), y su presencia indica decisiones
+              morales; acompaña a los borrachos o a quienes transitan de noche y puede salvar o condenar.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/el sombreron.jpg" alt="El sombreron">
+          <div class="card-body">
+            <h5 class="card-name">El sombreron</h5>
+            <p class="meta"><strong>pais:</strong>guatemala</p>
+            <p class="meta"><strong>Especie:</strong> Espíritu travieso</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Pueblos, plazas y bosques cercanos</p>
+            <p class="meta"><strong>Poderes:</strong> Encanto sobre jóvenes, enredo de cabellos, música embaucadora</p>
+            <p class="leyenda">El Sombrerón es un personaje que encanta a las jóvenes con su música y aspecto peculiar:
+              un
+              hombre pequeño con un gran sombrero. En algunas versiones amarra el caballo del enamorado o trenza el
+              cabello de la muchacha; su presencia obliga a tomar medidas rituales para liberarse de su hechizo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/la calchona.jpg" alt="La calchona">
+          <div class="card-body">
+            <h5 class="card-name">La calchona</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Mujer-bruja transformación</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Zonas rurales y caminos solitarios</p>
+            <p class="meta"><strong>Poderes:</strong> Metamorfosis, maleficios sobre familias</p>
+            <p class="leyenda">La Calchona es una mujer que, por arte de brujería, puede transformarse en animales o
+              sombras para castigar o proteger. En muchos relatos se la usa para explicar enfermedades o desgracias
+              súbitas en comunidades aisladas; su figura es ambivalente entre castigo moral y miedo folklórico.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/sirena.jpg" alt="sirena del lago budi">
+          <div class="card-body">
+            <h5 class="card-name">sirena del lago budi</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Espíritu acuático protector</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Lago Budi y estuarios</p>
+            <p class="meta"><strong>Poderes:</strong> Canto, control de corrientes, aviso a pescadores</p>
+            <p class="leyenda">Esta sirena local protege las aguas interiores y avisa a los pescadores de peligros como
+              corrientes traicioneras o la presencia de depredadores. No es necesariamente maligna: recompensa a quienes
+              respetan el equilibrio acuático con abundancia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/anchimallen 2.jpg" alt="anchimayen">
+          <div class="card-body">
+            <h5 class="card-name">anchimayen</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Espíritu travieso mapuche</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Bosques y alrededores de aldeas</p>
+            <p class="meta"><strong>Poderes:</strong> Pequeños hechizos, manipulación de sueños</p>
+            <p class="leyenda">El Anchimayen es un espíritu que los machis pueden invocar para ayudar o perjudicar;
+              suele
+              presentarse como un ser menor que realiza travesuras o pequeñas acciones, y su lealtad depende de la
+              intención de quien lo invoque.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/" alt="El sihueque">
+          <div class="card-body">
+            <h5 class="card-name">El sihueque</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Caballo mítico mapuche</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Pampas y caminos rurales</p>
+            <p class="meta"><strong>Poderes:</strong> Aparece como transporte sobrenatural, guía a viajeros</p>
+            <p class="leyenda">El Sihueque es un caballo de gran valor mítico que aparece para ayudar a quien respeta
+              las
+              leyes del lugar; su montura brinda velocidad y protección, pero exige respeto y pago ritual.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/KalkubyWolf.webp" alt="El kalku">
+          <div class="card-body">
+            <h5 class="card-name">El kalku</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Hechicero oscuro mapuche</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 5/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Lugares remotos y enterramientos</p>
+            <p class="meta"><strong>Poderes:</strong> Magia negra, invocación de espíritus dañinos</p>
+            <p class="leyenda">El Kalku es el brujo más temido en la tradición mapuche: domina fuerzas oscuras y puede
+              causar daño a comunidades completas si es desafiado. Se le enfrenta sólo con conocimientos específicos de
+              la
+              machi y rituales comunitarios.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/machi.jpg" alt="Machi">
+          <div class="card-body">
+            <h5 class="card-name">Machi</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Curandera y lider espiritual</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 1/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Comunidades, cerros sagrados</p>
+            <p class="meta"><strong>Poderes:</strong> Curación, comunicación con los espíritus, adivinación</p>
+            <p class="leyenda">La Machi es la figura sanadora de la comunidad mapuche: media con los Ngen, cura
+              enfermedades y mantiene el equilibrio entre las personas y la naturaleza. Su autoridad es social y
+              espiritual.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/mapinguari.webp" alt="Mapinguari">
+          <div class="card-body">
+            <h5 class="card-name">Mapinguari</h5>
+            <p class="meta"><strong>pais:</strong>brazil</p>
+            <p class="meta"><strong>Especie:</strong> Gigante del Amazonas</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 5/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Selva amazónica</p>
+            <p class="meta"><strong>Poderes:</strong> Fuerza descomunal, rugido que atemoriza, piel gruesa</p>
+            <p class="leyenda">El Mapinguari es un monstruo legendario del Amazonas que protege territorios forestales;
+              se
+              dice que devora a intrusos y que su presencia mantiene alejadas a las expediciones depredadoras. Algunos
+              lo
+              describen como un perezoso gigante o una criatura ancestral cubierta de pelo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/ahuizotl.webp" alt="Ahuizotl">
+          <div class="card-body">
+            <h5 class="card-name">Ahuizotl</h5>
+            <p class="meta"><strong>pais:</strong>mexico</p>
+            <p class="meta"><strong>Especie:</strong> Monstruo acuático mesoamericano</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Ríos y lagunas</p>
+            <p class="meta"><strong>Poderes:</strong> Atracción de bañistas, fuerza en el agua, manos prensiles</p>
+            <p class="leyenda">El Ahuizotl, de la tradición mesoamericana, es una criatura acuática que atrae a la gente
+              hacia el agua para ahogarlos; su forma varía entre una mezcla de perro y mono acuático con manos prensiles
+              en su cola. Es una advertencia sobre los peligros desconocidos de ríos ocultos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/lobizon.jpg" alt="El lobizon">
+          <div class="card-body">
+            <h5 class="card-name">El lobizon</h5>
+            <p class="meta"><strong>pais:</strong>argentina y paraguay</p>
+            <p class="meta"><strong>Especie:</strong> Hombre-lobo latinoamericano</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Espacios rurales y montes</p>
+            <p class="meta"><strong>Poderes:</strong> Transformación en lobo, fuerza aumentada, ferocidad nocturna</p>
+            <p class="leyenda">El Lobizón es la versión local del licántropo: una persona maldita o marcada que se
+              convierte en lobo en noches de luna llena, atacando animales y personas. En algunos mitos la condición se
+              transmite por la séptima generación.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/yacumama.jpg" alt="Yacumama">
+          <div class="card-body">
+            <h5 class="card-name">Yacumama</h5>
+            <p class="meta"><strong>pais:</strong>brazil</p>
+            <p class="meta"><strong>Especie:</strong> Ser acuático amazónico gigante</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 5/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Grandes ríos amazónicos</p>
+            <p class="meta"><strong>Poderes:</strong> Control de corrientes, absorción de embarcaciones, enorme tamaño
+            </p>
+            <p class="leyenda">La Yacumama es la madre de las aguas en relatos amazónicos: una serpiente o monstruo
+              gigante que protege ríos y castiga a quienes contaminan o dañan la selva. Los pescadores la respetan
+              profundamente y evitan atraer su ira.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/nahuel.jpeg" alt="Nahuel">
+          <div class="card-body">
+            <h5 class="card-name">Nahuel (felino mitico)</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Felino espiritual</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Bosques y laderas</p>
+            <p class="meta"><strong>Poderes:</strong> Sigilo, visión nocturna, protector del bosque</p>
+            <p class="leyenda">Nahuel es un felino mítico cuyo nombre evoca poder y fuerza. Es protector de ciertos
+              sectores del bosque y su aparición anuncia cambios y la necesidad de respeto por el entorno natural.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/inty.jpeg" alt="tata inty">
+          <div class="card-body">
+            <h5 class="card-name">tata inty (intipillan)</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Espíritu solar andino</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Altiplano y cumbres andinas</p>
+            <p class="meta"><strong>Poderes:</strong> Control de ciclos solares, calor vivificador</p>
+            <p class="leyenda">En las cosmovisiones andinas, el espíritu del sol es fuente de vida y energía. Aunque
+              diferente en cada cultura, su presencia se traduce en respeto por los ciclos agrícolas y ceremonias para
+              agradecer la luz.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/Cultrún-Kultrun.jpg" alt="Cultrun">
+          <div class="card-body">
+            <h5 class="card-name">Cultrun (entidad sonora)</h5>
+            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Especie:</strong> Instrumento-espíritu (símbolo mapuche)</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 1/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Rituales y fogatas</p>
+            <p class="meta"><strong>Poderes:</strong> Invoca memorias, guía rituales</p>
+            <p class="leyenda">El Cultrún no es criatura pero en la tradición mapuche su sonido y presencia actúan
+              como mediadores entre mundos; es símbolo de conocimiento y pertenencia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/Tunda.jpg" alt="Tunda">
+          <div class="card-body">
+            <h5 class="card-name">Tunda</h5>
+            <p class="meta"><strong>pais:</strong>Colombia</p>
+            <p class="meta"><strong>Especie:</strong> Espíritu embaucador </p>
+            <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Manglares y riberas</p>
+            <p class="meta"><strong>Poderes:</strong> Transformación, atracción, retención de víctimas</p>
+            <p class="leyenda">La Tunda se presenta como mujer hermosa que atrae a hombres para devorarlos o retenerlos
+              en los manglares; su versión demuestra el temor a lo desconocido en zonas costeras y la necesidad de
+              prudencia. </p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Bestiario 2025 para apoyo de colegios</p>
+      </footer>
+      <script src="js/bestiario.js"> </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+/*@media (min-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media (min-width:1024px) {
+  nav ul {
+    flex-direction: row;
+  }
+
+  footer {
+    display: block;
+  }
+}
+
+@media (min-width:0px) and (max-width: 767px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  footer {
+    display: none;
+  }
+}*/
+
+/*@media (min-width: 768px) tablet
+@media (min-width:1024px) computador
+@media (min-width: 0px) celulares*/
+
+header {
+  background-color: green;
+  color: yellow;
+  text-align: center;
+  padding: 1rem;
+  align-items: center;
+  justify-content: left;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: "New Rocker", system-ui;
+
+}
+
+footer {
+  background-color: green;
+  color: yellow;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  align-items: flex-start;
+  justify-content: left;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul {
+  font-size: 16px;
+}
+
+.principal {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parrafo {
+  color: greenyellow;
+  font-family: "New Rocker", system-ui;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 100px;
+  border-style: double;
+  border-color: greenyellow;
+  border-width: 1rem;
+  border-radius: 100px;
+  text-decoration: none;
+  display: flex;
+}
+
+.parrafo2 {
+  color: greenyellow;
+  font-family: "New Rocker", system-ui;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+
+
+
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0rem;
+  font-family: "New Rocker", system-ui;
+}
+
+.campotexto {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-family: "New Rocker", system-ui;
+}
+
+.formulario {
+  color: #fc0a0a;
+  border: none;
+  padding: 1rem;
+  font-family: Arial;
+  font-size: 50%;
+
+}
+
+button {
+  color: black;
+  background-color: greenyellow;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  margin: 1rem auto;
+  max-width: auto;
+}
+
+.col {
+  background-color: green;
+  width: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  border-style: double;
+  height: auto;
+}
+
+nav {
+  background-color: green;
+  padding: 1rem;
+  color: black;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 190%;
+  background: linear-gradient(to right, greenyellow, green);
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: yellow;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: black;
+}
+.btn-warning {
+  background-color: green;
+
+}
