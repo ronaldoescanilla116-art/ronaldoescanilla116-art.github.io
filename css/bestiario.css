@@ -136,7 +136,7 @@ header h1 {
 }
 
 .leyenda {
-    color: var(--muted);
+    color: green;
     font-size: 13px;
     margin-top: 8px;
 }
@@ -155,9 +155,16 @@ footer {
     text-decoration: none;
     font-weight: bold;
 }
-.carousel{
-    width: 360px;
-    height: 360px;
-}
 
+.button{
+    background-color: green;
+    color: yellow;
+    font-family: "New Rocker", system-ui;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid yellow;
+    border-radius: 12px;
+    cursor: pointer;
+}
 
