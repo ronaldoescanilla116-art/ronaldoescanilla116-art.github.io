@@ -5,24 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>bestiario</title>
+  <link rel="stylesheet" href="css/bestiario.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <!-- Prefer loading Google Fonts via <link> for faster and more reliable loading than @import -->
-  <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/bestiario.css">
 </head>
 
 <body>
   <div class="container">
     <header>
-      <h1>bestiario de mitologia chilena y latinoamericana</h1>
-      <p class="subtitle">exploremos las criaturas que habitan las leyendas de chile y latinoamerica</p>
-      <div class="control">
-      <div class="d-flex" role="search">
-        <input id="search" type="search" class="form-control me-2" placeholder="Buscar por nombre..." aria-label="Buscar" />
-        <button id="btnSearch" type="button" class="btn btn-primary">Buscar</button>
+      <!-- Barra de navegación responsive usando Bootstrap -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Bestiario</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="bestiario.html">Bestiario</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input id="search" class="form-control me-2" type="search" placeholder="Buscar por nombre..."
+                aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container header-content mt-4">
+        <h1>Bestiario de mitologia chilena y latinoamericana</h1>
+        <p class="subtitle">Exploremos las criaturas que habitan las leyendas de chile y latinoamerica</p>
       </div>
-    </div>
     </header>
     <div class="container"></div>
     <main class="grid" id="bestiario"></main>
@@ -31,12 +50,12 @@
         <div class="card criatura">
           <img src="images/trauco-acechando-mujer-bosque.jpg" alt="trauco">
           <div class="card-body">
-            <h5 class="card-name">trauco</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
-            <p class="meta"><strong>especie:</strong>duende chilote</p>
-            <p class="meta"><strong>peligrosidad:</strong>4/5</p>
-            <p class="meta"><strong>habitat:</strong>bosques de chiloe</p>
-            <p class="meta"><strong>poderes:</strong>seduccion irresistible, manipulacion emocional, sigilo absoluto</p>
+            <h5 class="card-name">Trauco</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
+            <p class="meta"><strong>Especie:</strong>Duende chilote</p>
+            <p class="meta"><strong>Peligrosidad:</strong>4/5</p>
+            <p class="meta"><strong>Habitat:</strong>Bosques de chiloe</p>
+            <p class="meta"><strong>Poderes:</strong>Seduccion irresistible, manipulacion emocional, sigilo absoluto</p>
             <p class="leyenda">el trauco es un ser pequeño y de aspecto grotesco que habita los bosques del archipielago
               de chiloe. segun la tradicion, posee un magnetismo irresistible sobre las mujeres; su mirada y precensia
               provocan atraccion y, a veces, embarazo inexplicable.</p>
@@ -47,14 +66,14 @@
         <div class="card">
           <img src="images/caleu.jpg" alt="caleuche">
           <div class="card-body">
-            <h5 class="card-name">caleuche</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
-            <p class="meta"><strong>especie:</strong>barco encantado</p>
-            <p class="meta"><strong>peligrosidad:</strong>5/5</p>
-            <p class="meta"><strong>habitat:</strong>canales y fiordos de chiloe</p>
-            <p class="meta"><strong>poderes:</strong>navegacion nocturna invisible, recoleccion de almas, transformacion
+            <h5 class="card-name">Caleuche</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
+            <p class="meta"><strong>Especie:</strong>Barco encantado</p>
+            <p class="meta"><strong>Peligrosidad:</strong>5/5</p>
+            <p class="meta"><strong>Habitat:</strong>Canales y fiordos de chiloe</p>
+            <p class="meta"><strong>Poderes:</strong>Navegacion nocturna invisible, recoleccion de almas, transformacion
             </p>
-            <p class="leyenda">el caleuche es el mitico barco fantasma de chiloe que aparece envuelto en luces y musica
+            <p class="leyenda">El caleuche es el mitico barco fantasma de chiloe que aparece envuelto en luces y musica
               durante la noche. dicen que recoge los naufragos y a los muertos, transformandolos en parte de su
               tripulacion eterna;tambien se le asocia con brujos y hechiceros. ver su estela es presagio: muchos
               relatos describen pactos, riquezas y la desaparicion de quienes aborden su cubierta. sus cantos atraen y
@@ -67,7 +86,7 @@
           <img src="images/images.jpg" alt="Alicanto">
           <div class="card-body">
             <h5 class="card-name">Alicanto</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Ave de metal</p>
             <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
             <p class="meta"><strong>Hábitat:</strong> Desierto de Atacama y quebradas mineras</p>
@@ -84,7 +103,7 @@
           <img src="images/piuchen_artaria_metal_fest_by_dhemoas_deuu1ny-fullview.jpg" alt="Peuchen">
           <div class="card-body">
             <h5 class="card-name">Peuchen</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Pais:</strong>chile</p>
             <p class="meta"><strong>Especie:</strong> Ser volador metamórfico</p>
             <p class="meta"><strong>Peligrosidad:</strong> 5/5</p>
             <p class="meta"><strong>Hábitat:</strong> Bosques, pantanos y riberas del sur de Chile</p>
@@ -102,8 +121,8 @@
         <div class="card">
           <img src="images/chonchón-2.jpg" alt="chonchon">
           <div class="card-body">
-            <h5 class="card-name">chonchon</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <h5 class="card-name">Chonchon</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Cabeza voladora hechizada</p>
             <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
             <p class="meta"><strong>Hábitat:</strong> Noches rurales, techos y árboles</p>
@@ -119,8 +138,8 @@
         <div class="card">
           <img src="images/camahueto___mitologia_chilena_by_maurilustrador_dfr1tqs-pre.jpg" alt="camahueto">
           <div class="card-body">
-            <h5 class="card-name">camahueto</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <h5 class="card-name">Camahueto</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Toro mítico acuático</p>
             <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
             <p class="meta"><strong>Hábitat:</strong> Ríos, estuarios y fiordos del sur</p>
@@ -137,8 +156,8 @@
         <div class="card">
           <img src="images/imbunche___mitologia_chilena_by_maurilustrador_dfr1try-pre.jpg" alt="imbunche">
           <div class="card-body">
-            <h5 class="card-name">imbunche</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <h5 class="card-name">Imbunche</h5>
+            <p class="meta"><strong>Pais:</strong>chile</p>
             <p class="meta"><strong>Especie:</strong> Humano transformado por brujería</p>
             <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
             <p class="meta"><strong>Hábitat:</strong> Cuevas y cavernas donde habitan los brujos</p>
@@ -154,8 +173,8 @@
         <div class="card">
           <img src="images/images.jpeg" alt="pillan">
           <div class="card-body">
-            <h5 class="card-name">pillan</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <h5 class="card-name">Pillan</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Espíritu volcánico (Mapuche)</p>
             <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
             <p class="meta"><strong>Hábitat:</strong> Volcanes, cumbres y grandes cerros</p>
@@ -172,8 +191,8 @@
         <div class="card">
           <img src="images/la-fiura-horror-y-maldad-femenina-chilencc83a.jpg" alt="la fiura">
           <div class="card-body">
-            <h5 class="card-name">la fiura</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <h5 class="card-name">La fiura</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Espíritu femenino del bosque</p>
             <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
             <p class="meta"><strong>Hábitat:</strong> Bosques húmedos y zonas silvestres</p>
@@ -191,8 +210,8 @@
         <div class="card">
           <img src="images/ngen.jpeg" alt="ngen">
           <div class="card-body">
-            <h5 class="card-name">ngen</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <h5 class="card-name">NGEN</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Guardianes espirituales mapuches</p>
             <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
             <p class="meta"><strong>Hábitat:</strong> Montes, riberas, piedras y lugares sagrados</p>
@@ -210,8 +229,8 @@
         <div class="card">
           <img src="images/la llorona.jpg" alt="la llorona">
           <div class="card-body">
-            <h5 class="card-name">la llorona</h5>
-            <p class="meta"><strong>pais:</strong>latinoamerica</p>
+            <h5 class="card-name">La llorona</h5>
+            <p class="meta"><strong>Pais:</strong>latinoamerica</p>
             <p class="meta"><strong>Especie:</strong> Aparición humana errante</p>
             <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
             <p class="meta"><strong>Hábitat:</strong> Riberas de ríos, lagunas y zonas rurales</p>
@@ -228,8 +247,8 @@
         <div class="card">
           <img src="images/el-nahuelito.jpg" alt="nahuelito">
           <div class="card-body">
-            <h5 class="card-name">nahuelito</h5>
-            <p class="meta"><strong>pais:</strong>argentina</p>
+            <h5 class="card-name">Nahuelito</h5>
+            <p class="meta"><strong>Pais:</strong>Argentina</p>
             <p class="meta"><strong>Especie:</strong> Monstruo lacustre</p>
             <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
             <p class="meta"><strong>Hábitat:</strong> Lagos patagónicos (Nahuel Huapi, etc.)</p>
@@ -246,8 +265,8 @@
         <div class="card">
           <img src="images/el cadejo.jpeg" alt="el cadejo">
           <div class="card-body">
-            <h5 class="card-name">el cadejo</h5>
-            <p class="meta"><strong>pais:</strong>guatemala</p>
+            <h5 class="card-name">El cadejo</h5>
+            <p class="meta"><strong>Pais:</strong>guatemala</p>
             <p class="meta"><strong>Especie:</strong> Perro fantasma protector o maléfico</p>
             <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
             <p class="meta"><strong>Hábitat:</strong> Caminos rurales y pueblos nocturnos</p>
@@ -263,7 +282,7 @@
           <img src="images/el sombreron.jpg" alt="El sombreron">
           <div class="card-body">
             <h5 class="card-name">El sombreron</h5>
-            <p class="meta"><strong>pais:</strong>guatemala</p>
+            <p class="meta"><strong>Pais:</strong>Guatemala</p>
             <p class="meta"><strong>Especie:</strong> Espíritu travieso</p>
             <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
             <p class="meta"><strong>Hábitat:</strong> Pueblos, plazas y bosques cercanos</p>
@@ -280,7 +299,7 @@
           <img src="images/la calchona.jpg" alt="La calchona">
           <div class="card-body">
             <h5 class="card-name">La calchona</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Mujer-bruja transformación</p>
             <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
             <p class="meta"><strong>Hábitat:</strong> Zonas rurales y caminos solitarios</p>
@@ -295,8 +314,8 @@
         <div class="card">
           <img src="images/sirena.jpg" alt="sirena del lago budi">
           <div class="card-body">
-            <h5 class="card-name">sirena del lago budi</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <h5 class="card-name">Sirena del lago budi</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Espíritu acuático protector</p>
             <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
             <p class="meta"><strong>Hábitat:</strong> Lago Budi y estuarios</p>
@@ -311,8 +330,8 @@
         <div class="card">
           <img src="images/anchimallen 2.jpg" alt="anchimayen">
           <div class="card-body">
-            <h5 class="card-name">anchimayen</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <h5 class="card-name">Anchimayen</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Espíritu travieso mapuche</p>
             <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
             <p class="meta"><strong>Hábitat:</strong> Bosques y alrededores de aldeas</p>
@@ -328,8 +347,8 @@
         <div class="card">
           <img src="images/" alt="El sihueque">
           <div class="card-body">
-            <h5 class="card-name">El sihueque</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <h5 class="card-name">El Sihueque</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Caballo mítico mapuche</p>
             <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
             <p class="meta"><strong>Hábitat:</strong> Pampas y caminos rurales</p>
@@ -345,7 +364,7 @@
           <img src="images/KalkubyWolf.webp" alt="El kalku">
           <div class="card-body">
             <h5 class="card-name">El kalku</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Hechicero oscuro mapuche</p>
             <p class="meta"><strong>Peligrosidad:</strong> 5/5</p>
             <p class="meta"><strong>Hábitat:</strong> Lugares remotos y enterramientos</p>
@@ -362,7 +381,7 @@
           <img src="images/machi.jpg" alt="Machi">
           <div class="card-body">
             <h5 class="card-name">Machi</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Curandera y lider espiritual</p>
             <p class="meta"><strong>Peligrosidad:</strong> 1/5</p>
             <p class="meta"><strong>Hábitat:</strong> Comunidades, cerros sagrados</p>
@@ -378,7 +397,7 @@
           <img src="images/mapinguari.webp" alt="Mapinguari">
           <div class="card-body">
             <h5 class="card-name">Mapinguari</h5>
-            <p class="meta"><strong>pais:</strong>brazil</p>
+            <p class="meta"><strong>Pais:</strong>Brazil</p>
             <p class="meta"><strong>Especie:</strong> Gigante del Amazonas</p>
             <p class="meta"><strong>Peligrosidad:</strong> 5/5</p>
             <p class="meta"><strong>Hábitat:</strong> Selva amazónica</p>
@@ -396,7 +415,7 @@
           <img src="images/ahuizotl.webp" alt="Ahuizotl">
           <div class="card-body">
             <h5 class="card-name">Ahuizotl</h5>
-            <p class="meta"><strong>pais:</strong>mexico</p>
+            <p class="meta"><strong>Pais:</strong>Mexico</p>
             <p class="meta"><strong>Especie:</strong> Monstruo acuático mesoamericano</p>
             <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
             <p class="meta"><strong>Hábitat:</strong> Ríos y lagunas</p>
@@ -412,7 +431,7 @@
           <img src="images/lobizon.jpg" alt="El lobizon">
           <div class="card-body">
             <h5 class="card-name">El lobizon</h5>
-            <p class="meta"><strong>pais:</strong>argentina y paraguay</p>
+            <p class="meta"><strong>Pais:</strong>Argentina y paraguay</p>
             <p class="meta"><strong>Especie:</strong> Hombre-lobo latinoamericano</p>
             <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
             <p class="meta"><strong>Hábitat:</strong> Espacios rurales y montes</p>
@@ -428,7 +447,7 @@
           <img src="images/yacumama.jpg" alt="Yacumama">
           <div class="card-body">
             <h5 class="card-name">Yacumama</h5>
-            <p class="meta"><strong>pais:</strong>brazil</p>
+            <p class="meta"><strong>Pais:</strong>Brazil</p>
             <p class="meta"><strong>Especie:</strong> Ser acuático amazónico gigante</p>
             <p class="meta"><strong>Peligrosidad:</strong> 5/5</p>
             <p class="meta"><strong>Hábitat:</strong> Grandes ríos amazónicos</p>
@@ -445,7 +464,7 @@
           <img src="images/nahuel.jpeg" alt="Nahuel">
           <div class="card-body">
             <h5 class="card-name">Nahuel (felino mitico)</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Felino espiritual</p>
             <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
             <p class="meta"><strong>Hábitat:</strong> Bosques y laderas</p>
@@ -459,8 +478,8 @@
         <div class="card">
           <img src="images/inty.jpeg" alt="tata inty">
           <div class="card-body">
-            <h5 class="card-name">tata inty (intipillan)</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <h5 class="card-name">Tata Inty (intipillan)</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Espíritu solar andino</p>
             <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
             <p class="meta"><strong>Hábitat:</strong> Altiplano y cumbres andinas</p>
@@ -476,7 +495,7 @@
           <img src="images/Cultrún-Kultrun.jpg" alt="Cultrun">
           <div class="card-body">
             <h5 class="card-name">Cultrun (entidad sonora)</h5>
-            <p class="meta"><strong>pais:</strong>chile</p>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
             <p class="meta"><strong>Especie:</strong> Instrumento-espíritu (símbolo mapuche)</p>
             <p class="meta"><strong>Peligrosidad:</strong> 1/5</p>
             <p class="meta"><strong>Hábitat:</strong> Rituales y fogatas</p>
@@ -491,7 +510,7 @@
           <img src="images/Tunda.jpg" alt="Tunda">
           <div class="card-body">
             <h5 class="card-name">Tunda</h5>
-            <p class="meta"><strong>pais:</strong>Colombia</p>
+            <p class="meta"><strong>Pais:</strong>Colombia</p>
             <p class="meta"><strong>Especie:</strong> Espíritu embaucador </p>
             <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
             <p class="meta"><strong>Hábitat:</strong> Manglares y riberas</p>
@@ -502,10 +521,135 @@
           </div>
         </div>
       </div>
-      <footer>
+      <div class="col">
+        <div class="card">
+          <img src="images/uay chivo.jpeg" alt="Uay chivo">
+          <div class="card-body">
+            <h5 class="card-name">uay chivo</h5>
+            <p class="meta"><strong>Pais:</strong>Yucatan (mexico)</p>
+            <p class="meta"><strong>Especie:</strong> Chivo hechicero (Mesoamérica)</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Selvas y poblados periféricos</p>
+            <p class="meta"><strong>Poderes:</strong> Transformación en chivo, destrucción nocturna</p>
+            <p class="leyenda">El Huay Chivo es un brujo que adopta la forma de chivo para hacer fechorías por la noche:
+              espantar animales, robar cosechas y causar discordia. Su mito advierte sobre el mal uso de la magia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/sachamama.webp" alt="sachamama">
+          <div class="card-body">
+            <h5 class="card-name">Sachamama</h5>
+            <p class="meta"><strong>Pais:</strong>Brazil</p>
+            <p class="meta"><strong>Especie:</strong> Ser vegetal gigante (Amazonas)</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Selva profunda</p>
+            <p class="meta"><strong>Poderes:</strong> Movilización de raíces, control vegetal, asfixia de invasores</p>
+            <p class="leyenda">La Sachamama, o serpiente de la selva, es figura que protege los árboles antiguos y
+              castiga
+              la tala indiscriminada; en relatos aparece como una gran raíz que devora a quienes dañan el bosque.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/culebron.jpeg" alt="culebron">
+          <div class="card-body">
+            <h5 class="card-name">Culebron</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
+            <p class="meta"><strong>Especie:</strong> Ser serpentino costero</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 3/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Riberas, manglares</p>
+            <p class="meta"><strong>Poderes:</strong> Control de corrientes, asfixia con anillos</p>
+            <p class="leyenda">El Culebrón emerge en relatos costeros como una gran serpiente que protege zonas de pesca
+              y
+              castiga a los que contaminan o roban sus recursos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/huayrapuca.jpg" alt="HUAY RAPUCA">
+          <div class="card-body">
+            <h5 class="card-name">Huay rapuca</h5>
+            <p class="meta"><strong>Pais:</strong>Argentina y los andes</p>
+            <p class="meta"><strong>Especie:</strong> Espíritu del viento andino</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Altiplano y quebradas</p>
+            <p class="meta"><strong>Poderes:</strong> Vientos fuertes, aviso de cambios climáticos</p>
+            <p class="leyenda">En las mitologías alto-andinas, el viento es personificado y puede ser un aliado o un
+              mensajero que trae noticias del clima; su respeto es esencial para la vida en altura.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/pishtaco.jpeg" alt="pishtaco">
+          <div class="card-body">
+            <h5 class="card-name">Pishtaco</h5>
+            <p class="meta"><strong>Pais:</strong>PERU</p>
+            <p class="meta"><strong>Especie:</strong> Asesino mítico</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 5/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Caminos rurales remotos</p>
+            <p class="meta"><strong>Poderes:</strong> Caza de cuerpos para grasa, sigilo extremo</p>
+            <p class="leyenda">El Pishtaco es una figura temida que se dice ataca a viajeros para robarles grasa
+              corporal,
+              usada en relatos para explicar desapariciones y miedos en zonas aisladas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/alux.jpg" alt="Alux">
+          <div class="card-body">
+            <h5 class="card-name">Alux</h5>
+            <p class="meta"><strong>Pais:</strong>mexico</p>
+            <p class="meta"><strong>Especie:</strong> Espíritu enano cuidador</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Campos y cuevas</p>
+            <p class="meta"><strong>Poderes:</strong> Protege cultivos, puede castigar descuidos</p>
+            <p class="leyenda">Los Aluxes son seres pequeños que protegen terrenos y cuevas; si son respetados traen
+              prosperidad, si se les enfurece causan problemas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/el_pombero_by_guillebot-d4cqlgk.jpg" alt="Pombero">
+          <div class="card-body">
+            <h5 class="card-name">Pombero</h5>
+            <p class="meta"><strong>Pais:</strong>Paraguay, Argentina y Brazil</p>
+            <p class="meta"><strong>Especie:</strong> Espíritu travieso protector</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 2/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Zonas rurales y selvas</p>
+            <p class="meta"><strong>Poderes:</strong> Esconde objetos, cuida ganados</p>
+            <p class="leyenda">El Pombero es un espíritu que vive en la frontera entre lo humano y lo salvaje: protege
+              la
+              fauna, asusta a intrusos y exige respeto por la naturaleza.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/Tuetue.webp" alt="Tue-Tue">
+          <div class="card-body">
+            <h5 class="card-name">Tue-Tue</h5>
+            <p class="meta"><strong>Pais:</strong>Chile</p>
+            <p class="meta"><strong>Especie:</strong>Brujo transformado en ave</p>
+            <p class="meta"><strong>Peligrosidad:</strong> 4/5</p>
+            <p class="meta"><strong>Hábitat:</strong> Campos y pueblos del centro y sur de chile</p>
+            <p class="meta"><strong>Poderes:</strong> Transformacion, grito profetico, malguero</p>
+            <p class="leyenda">se trata de un brujo comun que se transforma parcialmente en un ave negra o sombra
+              voladora con poderes menores al chonchon, pero igual de temido</p>
+          </div>
+        </div>
+      </div>
+      <footer id="footer">
         <p>Bestiario 2025 para apoyo de colegios</p>
       </footer>
       <script src="js/bestiario.js"> </script>
+      <script src="js/scripts.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

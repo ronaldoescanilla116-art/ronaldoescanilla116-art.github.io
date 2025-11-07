@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
 @media (min-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -136,7 +137,7 @@ header h1 {
 }
 
 .leyenda {
-    color: green;
+    color: var(--muted);
     font-size: 13px;
     margin-top: 8px;
 }
@@ -155,16 +156,70 @@ footer {
     text-decoration: none;
     font-weight: bold;
 }
-
-.button{
-    background-color: green;
-    color: yellow;
-    font-family: "New Rocker", system-ui;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 10px;
-    border: 2px solid yellow;
-    border-radius: 12px;
-    cursor: pointer;
+.carousel{
+    width: 360px;
+    height: 360px;
 }
+/*quiero que el body tenga una animacion de fondo que cambie de color de verde a negro*/
+
+
+/* Estilos personalizados para la navbar: fondo negro con acentos verdes */
+.navbar {
+    background: linear-gradient(90deg, #063d06 0%, #000000 100%) !important;
+    border-bottom: 3px solid #0b7a0b;
+}
+
+.navbar .navbar-brand {
+    color: #bfffb0 !important;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.navbar .nav-link {
+    color: #cfffb8 !important;
+    transition: color 160ms ease, background-color 160ms ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #9fff6a !important;
+    background-color: rgba(11,122,11,0.06);
+    border-radius: 6px;
+}
+
+.navbar .nav-link.active {
+    color: #9eff64 !important;
+    font-weight: 700;
+}
+
+.navbar .form-control {
+    /* fondo verde claro para el campo de búsqueda */
+    background: #e6ffd6 !important;
+    color: #003300 !important;
+    border: 1px solid #bfffb0 !important;
+}
+
+.navbar .navbar-toggler {
+    border-color: rgba(255,255,255,0.08);
+}
+
+.navbar .navbar-toggler-icon {
+    filter: invert(100%) brightness(80%);
+}
+
+/* Estilo para tarjeta resaltada al buscar */
+.card.highlight {
+    transform: scale(1.08) !important;
+    z-index: 50;
+    box-shadow: 0 20px 60px rgba(3, 20, 6, 0.7) !important;
+}
+
+/* Opcional: atenuar ligeramente las cartas no coincidentes cuando hay resultados */
+.cards-dimmed .card:not(.highlight) {
+    opacity: 0.45;
+    transform: scale(0.98);
+}
+
+
+
 
